@@ -1,1 +1,1 @@
-export default () => console.log('Salve');
+export default () => console.log('Salve Bruno');
