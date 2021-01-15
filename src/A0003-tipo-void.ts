@@ -1,6 +1,16 @@
-function showMessage(msg: any) {
-  return msg;
+function semRetorno(...args: string[]): void {
+  console.log(args.join(' '));
 }
 
-console.log(showMessage([1, 2, 3]));
-console.log(showMessage('Batata'));
+const pessoa = {
+  nome: 'Bruno',
+  sobrenome: 'Sajermann',
+
+  exibirNome(): void {
+    console.log(this.nome + ' ' + this.sobrenome);
+  },
+};
+
+semRetorno('Luiz', 'Otávio');
+pessoa.exibirNome();
+export { pessoa };
