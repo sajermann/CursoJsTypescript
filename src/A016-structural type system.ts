@@ -15,3 +15,4 @@ const sentUser = { username: 'Bruno', password: '123' };
 const loggedIn = verifyUser(bdUser, sentUser);
 
 console.log(loggedIn);
+export default 1;
